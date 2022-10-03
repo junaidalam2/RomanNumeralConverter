@@ -66,10 +66,14 @@ end
 
 def roman_numerals_converter(number)
 
+    if number > 3000 or number < 1
+        puts 'Number is outside of range of 1 to 3000'
+        return
+    end
+
     roman_numerals = {1000 => "M", 500 => "D", 100 => "C", 50 => "L", 10 => "X", 1 => "I", 5 => "V"}
     roman_output_arr = []
     number_str = number.to_s
-
     
     i = 0
     while number_str[i]
@@ -100,4 +104,8 @@ roman_numerals_converter(1991)
 roman_numerals_converter(14)
 roman_numerals_converter(2567)
 roman_numerals_converter(1549)
+roman_numerals_converter(0)
+roman_numerals_converter(-1)
+roman_numerals_converter(3000)
+roman_numerals_converter(3001)
 =end
