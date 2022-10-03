@@ -15,7 +15,7 @@ The function will return the Roman Numeral equivalent to an interger from 1 to 3
     
 
 ## Installation
-Installation of Ruby is required. Ruby will operate on a standard IDE. 
+Installation of Ruby is required. Ruby operates on a standard IDE. 
 
 ## Author
 
